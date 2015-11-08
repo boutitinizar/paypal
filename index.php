@@ -5,7 +5,7 @@
       ?>
 
 
-            <div class="row">
+    <div class="row" xmlns="http://www.w3.org/1999/html">
                 <?php   $products = $db->query('SELECT * FROM products');
                  foreach($products as $product): ?>
                      <div class="col-sm-4 col-lg-4 col-md-4">
@@ -20,11 +20,8 @@
                              <div class="ratings">
                                  <p class="pull-right">15 reviews</p>
                                  <p>
-                                     <span class="glyphicon glyphicon-star"></span>
-                                     <span class="glyphicon glyphicon-star"></span>
-                                     <span class="glyphicon glyphicon-star"></span>
-                                     <span class="glyphicon glyphicon-star"></span>
-                                     <span class="glyphicon glyphicon-star"></span>
+                                    <a href="addpanier.php?id=<?php echo $product->id ?>"> <span class="glyphicon glyphicon-shopping-cart"></span></a>
+
                                  </p>
                              </div>
                          </div>
