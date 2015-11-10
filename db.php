@@ -32,9 +32,9 @@ class db {
     }
 
 
-    public function query($sql){
+    public function query($sql,$data = array()){
         $req = $this->db->prepare($sql);
-        $req->execute();
+        $req->execute($data);
         return $req->fetchALL(PDO::FETCH_OBJ);
    }
 

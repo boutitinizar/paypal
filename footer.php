@@ -26,5 +26,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="lib/jquery/dist/jquery.min.js"></script>
 <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="web/js/app.js"></script>
 </body>
 </html>
